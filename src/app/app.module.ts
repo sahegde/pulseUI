@@ -11,6 +11,7 @@ import { AboutComponent } from "./about/about.component";
 import { RealtimeComponent } from "./realtime/realtime.component";
 import { InteractiveComponent } from "./interactive/interactive.component";
 import { HistoryComponent } from "./history/history.component";
+import { BarchartComponent } from "./barchart/barchart.component";
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { HistoryComponent } from "./history/history.component";
         HomeComponent,
         RealtimeComponent,
         InteractiveComponent,
-        HistoryComponent
+        HistoryComponent,
+        BarchartComponent
     ],
     imports: [
         BrowserModule,
