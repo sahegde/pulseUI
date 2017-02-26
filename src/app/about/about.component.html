@@ -1,17 +1,74 @@
-<!--
-  ~ Copyright (c) 2016 VMware, Inc. All Rights Reserved.
-  ~ This software is released under MIT license.
-  ~ The full license information can be found in LICENSE in the root directory of this project.
-  -->
-<p>This is a page to help demonstrate routing.</p>
-<button class="btn btn-primary" (click)="open = true">Show modal</button>
-<clr-modal [(clrModalOpen)]="open">
-  <h3 class="modal-title">I have a nice title</h3>
-  <div class="modal-body">
-    <p>But not much to say...</p>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-outline" (click)="open = false">Cancel</button>
-    <button type="button" class="btn btn-primary" (click)="open = false">Ok</button>
-  </div>
-</clr-modal>
+<div class="main-container">
+    <header class="header-5">
+        <div class="branding">
+          <a href="..." class="nav-link">
+            <span class="title">About the project</span>
+          </a>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="content-area">
+            <div class="card-img">
+                <img src="images/pulseAstro.jpg" alt="Introduction" />
+            </div>
+
+            <nav class="subnav">
+                <a href="..." class="active nav-link"><span class="nav-text">Selection</span></a>
+                <a href="..." class="nav-link"><span class="nav-text">Training</span></a>
+                <a href="..." class="nav-link"><span class="nav-text">Journey</span></a>
+                <a href="..." class="nav-link"><span class="nav-text">Life on Mars</span></a>
+            </nav>
+
+            Astronaut health and wellness is a key component within any manned spaceflight. Human spaceflight inherently involves a high degree of risk during 'all phases of any space mission, including terrestrial training and vehicle testing, launch, in-flight during the mission, and landing. Astronauts are faced with several health risks during both short- and long-duration spaceflight due to the hostile environment presented in space through weightlessness and potential radiation exposure. While there has been research advances in the monitoring of physiology of astronauts, the research has focused on data acquisition devices for discontinuous monitoring, retrospective analysis and real-time uni-variant display. 
+
+            Prognostics and Health Management (PHM), an engineering discipline utilized extensively in the aerospace domain for equipment has been proposed as a mechanism for monitoring astronaut health. Recent medical research is demonstrating the potential of Big Data analytics techniques for earlier onset detection of a range of conditions together with advanced analytics and visualization for advanced clinical decision support tools. In addition, the continuous monitoring of wellness based on clinical condition correlation rather than the assessment of vital sign monitoring will provide more advanced prognostics and health management as applied within the context of the assessment of health and wellness of astronauts. While there is great potential for Big Data based approaches to be used on space missions for astronaut monitoring, there is also "a major challenge in the evolution of space medicine is to determine how the physiological adaption to space may alter the path physiology of disease and the manifestation of illness and injury in space ". In order to pursue clinical research to explore these research questions, a diverse range of clinical data needs to be collected, during all phases of current missions including pre-and post-mission monitoring. This will enable the analysis and tuning of clinical decision support systems designed for use terrestrially to be tuned to discover alterations to the path physiology of disease and the manifestation of illness and injury in space. 
+
+            The acquisition, transmission, loading and processing of astronaut health streaming data together with other environmental streaming data is arguably a Big Data problem. The data science domain of Big Data refers to those forms of data that satisfy the characteristics of volume, velocity and variety. Physiological data and in particular streams such as an electrocardiogram, are forms of Big Data. Many other sensor generated data are forms of Big Data. Big Data approaches to clinical decision support are emerging that represent new opportunities for the health monitoring.
+
+            This project presents a framework for online health analytics. A series of clinical conditions relevant for astronaut health and wellness are used to demonstrate the potential of the use of Big Data online health analytics through their deployment. 
+
+            <div class="grid-view">
+                <clr-datagrid>
+                    <clr-dg-column>User ID</clr-dg-column>
+                    <clr-dg-column>Name</clr-dg-column>
+                    <clr-dg-column>Creation date</clr-dg-column>
+                    <clr-dg-column>Favorite color</clr-dg-column>
+
+                    <clr-dg-row *ngFor="let user of users">
+                        <clr-dg-cell>{{user.id}}</clr-dg-cell>
+                        <clr-dg-cell>{{user.name}}</clr-dg-cell>
+                        <clr-dg-cell>{{user.creation | date}}</clr-dg-cell>
+                        <clr-dg-cell>{{user.color}}</clr-dg-cell>
+                    </clr-dg-row>
+
+                    <clr-dg-footer>{{users.length}} users</clr-dg-footer>
+                    <clr-dg-row *ngFor="let user of users">
+                        <clr-dg-cell>{{user.id}}</clr-dg-cell>
+                        <clr-dg-cell>{{user.name}}</clr-dg-cell>
+                        <clr-dg-cell>{{user.creation | date}}</clr-dg-cell>
+                        <clr-dg-cell>
+                            <span class="color-square" [style.backgroundColor]="user.color"></span>
+                        </clr-dg-cell>
+                    </clr-dg-row>
+                </clr-datagrid>
+            </div>
+        </div>       
+           
+        <nav class="sidenav">
+            <div class="main-container">
+    <div class="content-container">
+        <nav class="sidenav">
+            <section class="sidenav-content">
+                <a href="..." class="nav-link active">
+                    PULSE
+                </a>
+                <a href="..." class="nav-link">
+                    MARS One
+                </a>
+                <a href="..." class="nav-link">
+                    FAQs
+                </a>
+            </section>
+        </nav>
+    </div>
+</div>

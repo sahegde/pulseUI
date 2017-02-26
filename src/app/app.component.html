@@ -3,7 +3,7 @@
     <div class="branding">
       <a href="#" class="nav-link">
         <span class="clr-icon clr-clarity-logo"></span>
-        <span class="title">Clarity</span>
+        <span class="title">PULSE</span>
       </a>
     </div>
     <form class="search">
@@ -19,6 +19,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#" [routerLink]="['/home']"
            [class.active]="router.url==='/home' || router.url==='/'">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/register']" [class.active]="router.url==='/register'">Register</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" [routerLink]="['/about']" [class.active]="router.url==='/about'">About</a>

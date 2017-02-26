@@ -6,13 +6,21 @@ import { ClarityModule } from 'clarity-angular';
 import { AppComponent } from './app.component';
 import { ROUTING } from "./app.routing";
 import { HomeComponent } from "./home/home.component";
+import { RegisterComponent } from "./register/register.component";
 import { AboutComponent } from "./about/about.component";
+import { RealtimeComponent } from "./realtime/realtime.component";
+import { InteractiveComponent } from "./interactive/interactive.component";
+import { HistoryComponent } from "./history/history.component";
 
 @NgModule({
     declarations: [
         AppComponent,
         AboutComponent,
-        HomeComponent
+        RegisterComponent,
+        HomeComponent,
+        RealtimeComponent,
+        InteractiveComponent,
+        HistoryComponent
     ],
     imports: [
         BrowserModule,

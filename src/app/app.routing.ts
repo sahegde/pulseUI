@@ -7,13 +7,21 @@ import { ModuleWithProviders } from '@angular/core/src/metadata/ng_module';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AboutComponent } from './about/about.component';
+import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
+import { RealtimeComponent } from './realtime/realtime.component';
+import { InteractiveComponent } from './interactive/interactive.component';
+import { HistoryComponent } from './history/history.component';
 
 
 export const ROUTES: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},
-    {path: 'about', component: AboutComponent}
+    {path: 'register', component: RegisterComponent},
+    {path: 'about', component: AboutComponent},
+    {path: 'realtime', component: RealtimeComponent},
+    {path: 'interactive', component: InteractiveComponent},
+    {path: 'history', component: HistoryComponent}
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES);
