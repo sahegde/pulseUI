@@ -5,7 +5,7 @@
  */
 import { async, TestBed, ComponentFixture } from "@angular/core/testing";
 import { ClarityModule } from 'clarity-angular';
-import { HistoryComponent } from './interactive.component';
+import { HistoryComponent } from './history.component';
 
 
 describe('HistoryComponent', () => {

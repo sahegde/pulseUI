@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { RealtimeComponent } from './realtime/realtime.component';
 import { InteractiveComponent } from './interactive/interactive.component';
 import { HistoryComponent } from './history/history.component';
+import { BarchartComponent } from './barchart/barchart.component';
 
 
 export const ROUTES: Routes = [
@@ -21,7 +22,8 @@ export const ROUTES: Routes = [
     {path: 'about', component: AboutComponent},
     {path: 'realtime', component: RealtimeComponent},
     {path: 'interactive', component: InteractiveComponent},
-    {path: 'history', component: HistoryComponent}
+    {path: 'history', component: HistoryComponent},
+    {path: 'barchart', component: BarchartComponent}
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES);

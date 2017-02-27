@@ -36,3 +36,9 @@ declare module 'd3' {
   export * from 'd3-zoom';
 }
 
+declare module 'c3' {
+  export * from 'c3';
+  export * from 'c3-chart';
+  export * from 'c3-angularjs';
+}
+

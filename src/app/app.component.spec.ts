@@ -8,6 +8,7 @@ import { AboutComponent } from "./about/about.component";
 import { RealtimeComponent } from "./realtime/realtime.component";
 import { InteractiveComponent } from "./interactive/interactive.component";
 import { HistoryComponent } from "./history/history.component";
+import { BarchartComponent } from "./barchart/barchart.component";
 import { ClarityModule } from "clarity-angular";
 import { ROUTING } from "./app.routing";
 import { APP_BASE_HREF } from "@angular/common";
@@ -26,7 +27,8 @@ describe('AppComponent', () => {
                 HomeComponent,
                 RealtimeComponent,
                 InteractiveComponent,
-                HistoryComponent
+                HistoryComponent,
+                BarchartComponent
             ],
             imports: [
                 ClarityModule.forRoot(),
